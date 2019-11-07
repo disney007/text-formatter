@@ -3,12 +3,13 @@
 <body>
 <input id="abc">
 </body>
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script src="xx.js"></script>
 <script>
-    $(document).ready(function () {
-        var formatter = new Formatter($("#abc"), "{{999}}#{{9999}}-{{9999}}")
+    exports = {};
+</script>
 
-    })
+<script src="dist/TextFormatter.js"></script>
+<script>
+    var elem = document.querySelector("#abc");
+    var formatter = new TextFormatter(elem, "{{000}}#{{0000}}-{{00}}")
 </script>
 </html>
