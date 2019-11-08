@@ -8,6 +8,10 @@ var elem = document.querySelector("input");
 var formatter = new TextFormatter(elem, "{{000}}#{{0000}}-{{00}}", /a-zA-Z0-9/)
 ```
 If input `123456789`, it will be formatted to `123#4567-89`
+```typescript
+formatter.getModelValue() // => 123456789
+formatter.getViewValue() // => 123#4567-89
+```
 ## API
 ```typescript
 class TextFormatter(element:HTMLInputElement, pattern:string, contentReg:RegExp)
